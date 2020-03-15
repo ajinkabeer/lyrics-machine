@@ -3,12 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Lyrics Machine</title>
   </head>
   <body>
     <header>
       <h1>Lyrics Machine</h1>
+
       <form id="form">
         <input
           type="text"
@@ -18,8 +25,17 @@
         <button>Search</button>
       </form>
     </header>
-    <div id="result" class="container"></div>
-    <div id="more" class="container"></div>
+    <main>
+      <div id="result" class="container"></div>
+      <div id="more" class="container"></div>
+    </main>
+
+    <footer>
+      <a href="https://github.com/ajinkabeer/lyrics-machine"
+        ><i class="fa fa-github fa-3x	" aria-hidden="true"></i
+      ></a>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
