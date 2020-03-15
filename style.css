@@ -100,7 +100,7 @@ ul.songs li {
   margin: 10px 0;
 }
 
-.conainter {
+.container {
   margin: 30px auto;
   max-width: 100%;
   width: 500px;
@@ -117,6 +117,7 @@ ul.songs li {
 .center {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .center {
