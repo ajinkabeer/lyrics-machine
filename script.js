@@ -18,9 +18,13 @@ form.addEventListener("submit", e => {
 
 //Search by song or artist
 async function searchSongs(searchTerm) {
-  const response = await fetch(`${apiURL}/suggest/${searchTerm}`);
-  const data = await response.json();
-  showData(data);
+  try {
+    const response = await fetch(`${apiURL}/suggest/${searchTerm}`);
+    const data = await response.json();
+    showData(data);
+  } catch (error) {
+    console.log("Sorry, Try again.");
+  }
 }
 
 //Render songs and artist in DOM
@@ -79,11 +83,16 @@ result.addEventListener("click", e => {
 });
 
 async function getLyrics(artist, songTitle) {
-  const res = await fetch(`${apiURL}/v1/${artist}/${songTitle}`);
-  const data = await res.json();
-  const lyrics = data.lyrics.replace(/(\r|\n)/g, "<br>");
-  more.innerHTML = "";
-  result.innerHTML = `<h2><strong>${artist}</strong></h2>
-  <span>${lyrics}</span>
-  `;
+  try {
+    const res = await fetch(`${apiURL}/v1/${artist}/${songTitle}`);
+    const data = await res.json();
+    const lyrics = data.lyrics.replace(/(\r|\n)/g, "<br>");
+    more.innerHTML = "";
+    console.log(lyrics);
+    result.innerHTML = `<h2><strong>${artist}</strong></h2>
+    <span>${lyrics}</span>
+    `;
+  } catch (error) {
+    alert("Sorry, not available.");
+  }
 }
