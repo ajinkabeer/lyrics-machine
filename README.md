@@ -6,7 +6,7 @@ An absolute awesome website to search for your favorite lyrics.
 
 * HTML - For the web framework
 * CSS - For styling components
-* Vanilla JS - For functionality
+* Vanilla JS - For everything else :)
 
 ## Authors
 
