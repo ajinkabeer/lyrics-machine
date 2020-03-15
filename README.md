@@ -1,6 +1,6 @@
 # Lyrics Machine 🎼
 
-An absolute awesome machine to search for your favorite lyrics.
+An absolute awesome website to search for your favorite lyrics.
 
 ## Built with
 
