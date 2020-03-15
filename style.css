@@ -125,10 +125,6 @@ ul.songs li {
   margin: 15px;
 }
 
-main {
-  min-height: 57vh;
-}
-
 footer {
   display: flex;
   justify-content: center;
