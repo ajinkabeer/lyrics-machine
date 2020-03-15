@@ -50,11 +50,20 @@ function showData(data) {
     }
     ${
       data.next
-        ? `<button class="btn" onClick="getMoreSongs('${data.bext}')">Next</button>`
+        ? `<button class="btn" onClick="getMoreSongs('${data.next}')">Next</button>`
         : ""
     }
     `;
   } else {
     more.innerHTML = "";
   }
+}
+
+//pagination
+
+async function getMoreSongs(url) {
+  console.log(url);
+  const response = await fetch(`https://cors-anywhere.herokuapp.com/${url}`);
+  const data = await response.json();
+  showData(data);
 }
