@@ -1,6 +1,7 @@
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 const result = document.getElementById("result");
+const more = document.getElementById("more");
 
 const apiURL = "https://api.lyrics.ovh";
 
@@ -40,4 +41,20 @@ function showData(data) {
     .join("")}
   </ul>
   `;
+  if (data.prev || data.next) {
+    more.innerHTML = `
+    ${
+      data.prev
+        ? `<button class="btn" onClick="getMoreSongs('${data.prev}')">Previous</button>`
+        : ""
+    }
+    ${
+      data.next
+        ? `<button class="btn" onClick="getMoreSongs('${data.bext}')">Next</button>`
+        : ""
+    }
+    `;
+  } else {
+    more.innerHTML = "";
+  }
 }
