@@ -11,10 +11,10 @@ An absolute awesome website to search for your favorite lyrics.
 ## Authors
 
 ### Lead Developers
-* [**Ajin Kabeer**](https://github.com/liyasthomas) - *Author*
+* [**Ajin Kabeer**](https://github.com/ajinkabeer) - *Author*
 
 ### Testing and Debugging
-* [Ajin Kabeer](https://github.com/liyasthomas)
+* [Ajin Kabeer](https://github.com/ajinkabeer)
 
 
 ## Acknowledgments
